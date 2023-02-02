@@ -1,21 +1,21 @@
 import math
 
 def isPerfectNumber(n):
-    factors = []
+    sum =1
     i = 2
     while i <= math.sqrt(n):
         if n % i == 0:
             if n % i == i:
-                factors.append(i)
+                sum += i
             else:
-                factors.append(i)
-                factors.append(int(n/i))
+                sum += i
+                sum += n//i
         i = i + 1
     # print(n,"have list of factors of",factors)
-    return True if sum(factors)+1 == n else False
+    return True if sum == n else False
 
 def printPerfectNumber(n):
-    for i in range (1, n+1):
+    for i in range (2, n):
         if isPerfectNumber(i):
             print(i)
 
