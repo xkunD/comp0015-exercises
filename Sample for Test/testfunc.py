@@ -105,6 +105,7 @@ def main():
     #question5()
 
     # three_heads()
+    
     print(is_all_char_in("wHol", "Hello world"))
     print(is_all_char_in("eo2u", "Hello world"))
     print(is_all_char_in("whol", "Hello world"))
