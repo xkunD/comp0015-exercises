@@ -21,9 +21,9 @@ from turtle import *
 
 def draw_square(side_length):
     
-    for counter in range(4):
+    for counter in range(5):
         fd(side_length)
-        lt(90)
+        lt(72)
 
 
 # place the turtle on the left hand side of your canvas
