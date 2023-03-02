@@ -35,23 +35,6 @@ def number_square(start, end):
 
 def square_line(current_number, start_range, end_range):
     """
-    Construct the string representing a line of the square
-
-    Parameters
-    ----------
-    current_number : int
-        the number that starts this line of the square
-
-    start_range : int
-        the start of the range
-
-    end_range : int
-        the end of the range
-
-    Returns
-    -------
-    str
-        the string representing the line
 
     """
     line_string = MARGIN + str(current_number)

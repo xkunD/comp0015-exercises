@@ -2,6 +2,8 @@ from turtle import *
 import math
 import random
 
+
+
 # question 7
 def is_all_char_in(str1, str2):
     for i in range(len(str1)):
@@ -66,13 +68,13 @@ def question5():
 
 # question 4
 def remove_eq(nums, n):
-    reslist = []
-    for i in range (len(nums)):
-        if nums[i] == n:
-            continue
-        else:
-            reslist.append(nums[i])
-    return reslist
+    removed = True
+    while removed:
+        removed = False
+        if n in nums:
+            nums.remove(n)
+            removed = True
+    return nums
 
 # question 3
 def g(s):
@@ -98,9 +100,9 @@ def main():
     # print(g("redivider"))
     # print(g("rAcecaR"))
 
-    # print(remove_eq([18, 7, 8, 34, 8, 8, 23], 8))
-    # print(remove_eq([8, 8, 8], 8))
-    # print(remove_eq([18, 7, 8, 34, 8, 8, 23], 38))
+    print(remove_eq([18, 7, 8, 34, 8, 8, 23], 8))
+    print(remove_eq([8, 8, 8], 8))
+    print(remove_eq([18, 7, 8, 34, 8, 8, 23], 38))
 
     #question5()
 
